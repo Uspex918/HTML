@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <label for="comments">Ваше мнение о нас:</label>
+        <textarea name="user-comment" id="comments">
+Можете сюда писать!</textarea
+        >
+        <hr />
+        <label for="city">Your city is:</label>
+        <form action="">
+            <select name="useer-city" id="city" required>
+                <option value="" disabled selected>Не выбрано</option>
+                <option value="moscow">Москва</option>
+                <option value="petesburg">Санкт-Петербург</option>
+                <option value="anatlya">Анталья</option>
+                <option value="new-york">Нью-Йорк</option>
+            </select>
+            <button>Send</button>
+        </form>
+        <hr />
+        <label for="office">Выберите офис:</label>
+        <select name="user-office" id="office">
+            <optgroup label="Центральный район">
+                <option name="center-1" id="">ул. Ленина</option>
+                <option name="center-2" id="">ул. Пушкина</option>
+                <option name="center-3" id="">бул. Есенина</option>
+            </optgroup>
+            <optgroup label="Южный район">
+                <option name="south-1" id="">ул. Космонавтов</option>
+                <option name="south-2" id="">Сиреневый бул.</option>
+            </optgroup>
+        </select>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+            <p>
+                <label for="email">Электронная почта:</label>
+                <input type="email" name="user-email" id="email" />
+
+                <label for="user-profile">Сылка на профиль:</label>
+                <input type="url" name="user-profile" id="user-profile" />
+
+                <label for="user-phone">Номер телефона</label>
+                <input type="tel" id="user-phone" name="user-phone" />
+
+                <label for="search-query">Введите поисковый запрос:</label>
+                <input type="search" id="search-query" name="search-query" />
+
+                <label for="user-age">Ваш возраст:</label>
+                <input type="number" id="user-age" name="user-age" />
+
+                <label for="user-password">Ваш пароль:</label>
+                <input
+                    type="password"
+                    id="user-password"
+                    name="user-password"
+                />
+                <hr>
+                <label for="fulldata">Fulldata</label>
+                <input type="date" id="fulldata" name="fulldata">
+
+                <label for="fulldata-with-time">Fulldata + time</label>
+                <input type="datetime-local" id="fulldata-with-time" name="fulldata-with-time">
+
+                <label for="month">Month</label>
+                <input type="month" id="month" name="month">
+
+                <label for="week">Week</label>
+                <input type="week" id="week" name="week">
+
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time">
+
+                <label for="prefer-color">Выберите предпочтительный цвет:</label>
+                <input type="color" name="prefer-color" id="prefer-color">
+
+                <p>
+                    <label for="user-document-1">Это ваши доки:</label>
+                    <input type="file" name="user-documents" id="user-document-1">
+                </p>
+                <p>
+                    <label for="user-document-2">Это ваши доки:</label>
+                    <input type="file" name="user-documents" id="user-document-2">
+                </p>
+                <p>
+                    <label for="user-documents">Это ваши доки:</label>
+                    <input type="file" name="user-documents" id="user-documents" multiple>
+                </p>
+
+                <label for="agreements">Согласен?</label>
+                <input type="checkbox" name="agreements" id="agreements" value="agreements">
+                
+            </p>
+             <p>
+                <legend>Ваш пол</legend>
+                <input type="radio" name="gender" value="male" id="male">
+                <input type="radio" name="gender" value="female" id="female">
+            </p>
+            <label for="sound-volume">Громкость звука:</label>
+            <input type="range" name="sound-volume" id="sound-volume" min="1" max="10">
+            
+            <p>
+                <button type="submit">Отправить</button>
+            </p>
+           
+        </form>
+    </body>
+</html>

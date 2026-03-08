@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="/naServer">
+            <p>
+                <label for="login"></label>
+                <input id="login" name="user-login" required />
+            </p>
+            <p>
+                <label for="agreement">Я согласен</label>
+                <input
+                    type="checkbox"
+                    id="agreement"
+                    name="agreement"
+                    value="agreement"
+                    required
+                />
+            </p>
+            <button type="submit">Отправить</button>
+        </form>
+        <hr />
+        <form action="">
+            <p>
+                <label for="login2">Логин:</label>
+                <input
+                    id="login2"
+                    name="user-login2"
+                    placeholder="Можете писать"
+                />
+            </p>
+        </form>
+        <hr />
+        <form action="">
+            <div>
+                <label for="name">Введите имя</label>
+                <input id="name" type="text" autocomplete="off" />
+            </div>
+            <div>
+                <label for="email">Электронная почта</label>
+                <input id="email" type="email" autocomplete="on" />
+            </div>
+            <div>
+                <label for="cc-name">Банк</label>
+                <input id="cc-name" type="cc-name" autocomplete="on" />
+            </div>
+            <div>
+                <label for="cc-number">Банк2</label>
+                <input id="cc-number" type="cc-number" autocomplete="on" />
+            </div>
+            <div>
+                <label for="current-password">Пароль</label>
+                <input
+                    id="current-password"
+                    type="current-password"
+                    autocomplete="on"
+                />
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+        <input type="text" />
+        <textarea name="" id="" autofocus></textarea>
+        <button onclick="alert('Хавтит нажимать!')">Нажми</button>
+        <hr />
+        <p>
+            <label for="email">Ваш emil:</label>
+            <input type="email" name="email" id="email" form="user-info" />
+        </p>
+        <form action="" id="user-info">
+            <p>
+                <label for="name">Ваше имя:</label>
+                <input name="name" id="name" type="text" pattern="[a-zA-Z]+" />
+            </p>
+            <p>
+                <button type="submit">Отправить</button>
+            </p>
+        </form>
+    </body>
+</html>
